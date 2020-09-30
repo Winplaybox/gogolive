@@ -592,11 +592,11 @@ class NodeRtmpSession {
       if (sound_format == 4) {
         this.audioSamplerate = 16000;
       } else if (sound_format == 5) {
-        this.audioSamplerate = 8000;
+        this.audioSamplerate = process.env.PORT || 8000;
       } else if (sound_format == 11) {
         this.audioSamplerate = 16000;
       } else if (sound_format == 14) {
-        this.audioSamplerate = 8000;
+        this.audioSamplerate = process.env.PORT || 8000;
       }
 
       if (sound_format != 10) {
