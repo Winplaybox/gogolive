@@ -6,7 +6,7 @@ const config = {
     chunk_size: 60000,
     gop_cache: true,
     ping: 30,
-    ping_timeout: 30,
+    ping_timeout: 300,
 	/*
     ssl: {
       port: 443,
@@ -22,11 +22,11 @@ const config = {
     allow_origin: '*',
     api: true
   },
-  https: {
-    port:8443,
-    key: './privatekey.pem',
-    cert: './certificate.pem',
-  },
+  // https: {
+  //   port:8443,
+  //   key: './privatekey.pem',
+  //   cert: './certificate.pem',
+  // },
   auth: {
     api: true,
     api_user: 'admin',
