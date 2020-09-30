@@ -16,14 +16,14 @@ const config = {
 	*/
   },
   http: {
-    port: 8000,
+    port: process.env.PORT || 8000,
     mediaroot: './media',
     webroot: './www',
     allow_origin: '*',
     api: true
   },
   https: {
-    port: 8443,
+    port: process.env.PORT || 8443,
     key: './privatekey.pem',
     cert: './certificate.pem',
   },
