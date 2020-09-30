@@ -2,7 +2,7 @@ const NodeMediaServer = require('./');
 
 const config = {
   rtmp: {
-    port:process.env.PORT || 1935,
+    port:process.env.PORT1 || 1935,
     chunk_size: 60000,
     gop_cache: true,
     ping: 30,
@@ -16,7 +16,7 @@ const config = {
 	*/
   },
   http: {
-    port:8000,
+    port:process.env.PORT || 8000,
     mediaroot: './media',
     webroot: './www',
     allow_origin: '*',

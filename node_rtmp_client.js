@@ -13,7 +13,7 @@ const AMF = require('./node_core_amf');
 
 const FLASHVER = "LNX 9,0,124,2";
 const RTMP_OUT_CHUNK_SIZE = 60000;
-const RTMP_PORT = 1935;
+const RTMP_PORT = process.env.PORT1 || 1935;
 
 const RTMP_HANDSHAKE_SIZE = 1536;
 const RTMP_HANDSHAKE_UNINIT = 0;
